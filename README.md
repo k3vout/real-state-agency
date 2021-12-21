@@ -1,25 +1,91 @@
-# README
+# Real State Agency
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This project uses the EasyBroker API to get properties and details of a property.
 
-Things you may want to cover:
+<img width="1264" alt="imagen" src="https://user-images.githubusercontent.com/39852288/146881303-3300c1f7-f601-42d6-b479-3cc216bd1417.png">
 
-* Ruby version
+## Built With
 
-* System dependencies
+- ![Rails](https://img.shields.io/badge/rails-%23CC0000.svg?style=for-the-badge&logo=ruby-on-rails&logoColor=white)
 
-* Configuration
+## Getting Started
 
-* Database creation
+### Installation
 
-* Database initialization
+1. Clone the repo
 
-* How to run the test suite
+   ```sh
+   git@github.com:sevinchek/real-state-agency.git
+   ```
 
-* Services (job queues, cache servers, search engines, etc.)
+### Usage
 
-* Deployment instructions
+1. Install ruby gems dependencies
 
-* ...
-# real-state-agency
+   ```sh
+   bundle install
+   ```
+
+2. Database creation
+
+   ```
+   rails db:setup
+   ```
+   
+2. Create a `.env` file in the root of the project and add your API KEY
+
+   ```
+   API_KEY = fkasdlfkjalñskdjfñlkajsdf
+   ```
+
+3. Run the web server
+
+   ```sh
+   rails server
+   ```
+
+4. Access to the website in a browser with the following link
+
+   ```sh
+   localhost:3000
+   ```
+
+### Test
+
+1. For testing run:
+
+   ```sh
+   rspec spec/* --format doc
+   ```
+
+### Notes
+
+- What was the hardest thing you had to solve while building the website?
+  - The pagination feature took more time than the other features.
+- Are there any areas of your code that you think isn't that "clean"?
+  - Maybe the html should be improved.
+- If you weren't able to finish: what were you able to complete and were you happy with your progress given the time constraints?
+  - The slideshow of all photos feature.
+
+## Author
+
+👤 **Kevin**
+
+- GitHub: [@sevinchek](https://github.com/sevinchek)
+- Twitter: [@sevinchek](https://twitter.com/sevinchek)
+- LinkedIn: [LinkedIn](https://linkedin.com/in/sevinchek)
+
+
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome!
+
+Feel free to check the [issues page](https://github.com/the-catalystmc/recipe-app/issues).
+
+## Show your support
+
+Give a ⭐️ if you like this project!
+
+## 📝 License
+
+This project is [MIT](https://github.com/git/git-scm.com/blob/main/MIT-LICENSE.txt) licensed.
