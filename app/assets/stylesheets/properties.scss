@@ -1,0 +1,68 @@
+// Place all the styles related to the properties controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+
+.header {
+  background-color: #0f2c67;
+  padding: 1rem 4rem;
+}
+
+.logo-title {
+  font-size: 1.5rem;
+  color: #fff;
+  font-weight: 700;
+}
+
+.properties-section {
+  padding: 2rem 4rem;
+  h2 {
+    margin: 0 0 1rem 0;
+  }
+  .property-links > li {
+    border: 2px solid #cd1818;
+    border-radius: 4px;
+    margin: 0 0 1rem 0;
+    padding: 1rem;
+    p {
+      margin: 0 0 0.25rem 0;
+    }
+  }
+}
+
+.pagination-links {
+  font-weight: 700;
+  font-size: 1.125rem;
+}
+
+.property-details-section {
+  padding: 2rem 4rem;
+  h2 {
+    margin: 0 0 1rem 0;
+  }
+  p {
+    margin: 0 0 0.5rem 0;
+  }
+}
+
+.add-lead {
+  margin: 1rem 0 0 0;
+}
+
+.add-lead-form {
+  input,
+  textarea {
+    width: 75%;
+    margin: 0;
+    padding: 0.125rem;
+  }
+  .add-lead-input-div {
+    margin: 0 0 0.75rem 0;
+  }
+  .add-lead-btn {
+    border: 2px solid #cd1818;
+    border-radius: 4px;
+    background-color: #cd1818;
+    color: #fff;
+    font-weight: 700;
+  }
+}
