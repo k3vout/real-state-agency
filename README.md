@@ -59,7 +59,7 @@ This project uses the EasyBroker API to get properties and details of a property
    rspec spec/* --format doc
    ```
 
-### Notes
+## Notes
 
 - What was the hardest thing you had to solve while building the website?
   - The pagination feature took more time than the other features.
