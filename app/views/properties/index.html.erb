@@ -1,0 +1,24 @@
+<section class="properties-section">
+  <h2>Properties:</h2>
+  <% unless @response.nil? %>
+    <ul>
+      <% @response['content'].each do |property| %>
+        <%= link_to(property_details_path(property['public_id']), class: 'property-links') do %>
+          <li>
+            <p><b>Public ID:</b> <%= property['public_id'] %></p>
+            <p><b>Title:</b> <%= property['title'] %></p>
+            <p><b>Property type:</b> <%= property['property_type'] %></p>
+            <p><b>Location:</b> <%= property['location'] %></p>
+            <img src=<%= property['title_image_thumb'] %>>
+          </li>
+        <% end %>
+      <% end %>
+    </ul>
+    <% if @response['pagination']['page'].to_i != 1 %>
+      <%= link_to "Previous Page", properties_list_path(id: @response['pagination']['page'].to_i - 1), method: :get, class: 'pagination-links'  %>
+    <% end %>
+    <% if @response['pagination']['page'].to_i != @response['total'].to_i %>
+      <%= link_to "Next Page", properties_list_path(id: @response['pagination']['page'].to_i + 1), method: :get, class: 'pagination-links'  %>
+    <% end %>
+  <% end %>
+</section>

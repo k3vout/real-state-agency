@@ -1,0 +1,43 @@
+<section class="property-details-section">
+  <h2>Property details:</h2>
+  <% unless @response.nil? %>
+    <% unless @response['public_id'].nil? %>
+      <p><b>Public ID:</b> <%= @response['public_id'] %></p>
+    <% end %>
+    <% unless @response['title'].nil? %>
+      <p><b>Title:</b> <%= @response['title'] %></p>
+    <% end %>
+    <% unless @response['description'].nil? %>
+      <p><b>Description:</b> <%= @response['description'] %></p>
+    <% end %>
+    <% unless @response['property_images'].first.nil? %>
+      <img src=<%= @response['property_images'].first['url'] %> alt="">
+    <% end %>
+    <% unless @response['property_type'].nil? %>
+      <p><b>Property type:</b> <%= @response['property_type'] %></p>
+    <% end %>
+    <% unless @response['location']['name'].nil?  %>
+      <p><b>Location:</b> <%= @response['location']['name'] %></p>
+    <% end %>
+    <div class="add-lead">
+      <h3>Add Lead</h3>
+      <%= form_with url: new_lead_path, method: :post, class: 'add-lead-form', id: '' do |form| %>
+        <div class="add-lead-input-div">
+          <%= form.text_field :name, placeholder: 'Name', class: '', required: true %>
+        </div>
+        <div class="add-lead-input-div">
+          <%= form.text_field :phone, placeholder: 'Phone', class: '', required: true %>
+        </div>
+        <div class="add-lead-input-div">
+          <%= form.text_field :email, placeholder: 'Email', class: '', required: true %>
+        </div>
+        <div class="add-lead-input-div">
+          <%= form.text_area :message, placeholder: 'Message', class: '', required: true %>
+        </div>
+        <div class="">
+          <%= form.submit "Add Lead", class: 'add-lead-btn' %>
+        </div>
+      <% end %>
+    </div>
+  <% end %>
+</section>
