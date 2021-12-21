@@ -3,6 +3,7 @@
 This project uses the EasyBroker API to get properties and details of a property.
 
 <img width="1264" alt="imagen" src="https://user-images.githubusercontent.com/39852288/146881303-3300c1f7-f601-42d6-b479-3cc216bd1417.png">
+<img width="1197" alt="imagen" src="https://user-images.githubusercontent.com/39852288/146882493-44311f5e-e133-41ae-b815-2d3d7c06dc5d.png">
 
 ## Built With
 
